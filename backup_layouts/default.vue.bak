@@ -1,0 +1,25 @@
+<template>
+  <div>
+    <!-- En-tête global -->
+    <header class="p-4 bg-gray-800 text-white">
+      <h1 class="text-xl font-bold">Vocab App</h1>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="p-8">
+      <slot />
+    </main>
+
+    <!-- Footer avec bouton de donation -->
+    <footer class="p-4 bg-gray-100 text-center">
+      <DonateButton
+        url="https://www.paypal.com/ncp/payment/TXJM3XZKYK484"
+        label="💖 Soutenir ce projet"
+      />
+    </footer>
+  </div>
+</template>
+
+<script setup>
+import DonateButton from '~/components/DonateButton.vue'
+</script>
